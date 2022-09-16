@@ -20,14 +20,12 @@ struct OnboardingView: View {
                 .ignoresSafeArea(.all, edges: .all)
             
             VStack(spacing: 20) {
-                Text("Onboarding")
-                    .font(.largeTitle)
+                // MARK: - HEADER
                 
-                Button(action: {
-                    isOnboardingViewActive = false
-                }) {
-                    Text("Start")
-                }
+                // MARK: - CENTER
+                
+                // MARK: - FOOTER
+                
             } //: VSTACK
         } //: ZSTACK
     }
