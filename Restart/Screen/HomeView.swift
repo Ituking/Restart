@@ -36,10 +36,18 @@ struct HomeView: View {
             
             // MARK: - FOOTER
             
+            Spacer()
+            
+            
             Button(action: {
                 isOnboardingViewActive = true
             }) {
+                Image(systemName: "arrow.triangle.2.circlepath.circle.fill")
+                    .imageScale(.large)
+                
                 Text("Restart")
+                    .font(.system(.title3, design: .rounded))
+                    .fontWeight(.bold)
             }
         } //: VSTACK
     }
