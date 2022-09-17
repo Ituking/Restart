@@ -102,9 +102,14 @@ struct OnboardingView: View {
                         }
                         .foregroundColor(.white)
                         .frame(width: 80, height: 80, alignment: .center)
-                        .offset(x: 0)
+                        .offset(x: buttonOffset)
                         .gesture(
                             DragGesture()
+                                .onChanged { gesture in
+                                    if gesture.translation.width > 0 {
+                                        buttonOffset = gesture.translation.width
+                                    }
+                                }
                         ) //: GESTURE
                         
                         Spacer()
