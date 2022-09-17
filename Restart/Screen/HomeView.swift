@@ -48,7 +48,10 @@ struct HomeView: View {
                 Text("Restart")
                     .font(.system(.title3, design: .rounded))
                     .fontWeight(.bold)
-            }
+            } //: BUTTON
+            .buttonStyle(.borderedProminent)
+            .buttonBorderShape(.capsule)
+            .controlSize(.large)
         } //: VSTACK
     }
 }
